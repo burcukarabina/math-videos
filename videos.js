@@ -75,5 +75,18 @@ const videos = [
   youtubeId: "7gMzQ7-qAys",
   description:
     "An introduction to level curves and how they help visualize functions of two variables."
+},
+
+  {
+  course: "calculus-3",
+  courseName: "Calculus III",
+  page: "calculus-3.html",
+  id: "cross-sections",
+  section: "Functions of Several Variables",
+  topic: "Cross Sections",
+  title: "Cross Sections",
+  youtubeId: "7V5kwhb2UuI",
+  description:
+    "An introduction to cross sections and how they help visualize surfaces defined by functions of two variables."
 }
 ];
