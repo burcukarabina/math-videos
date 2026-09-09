@@ -50,4 +50,17 @@ const videos = [
     description:
       "Recognizing composite functions and applying the chain rule efficiently."
   }
+
+  {
+  course: "calculus-3",
+  courseName: "Calculus III",
+  page: "calculus-3.html",
+  id: "understanding-multivariable-functions",
+  section: "Functions of Several Variables",
+  topic: "Multivariable Functions",
+  title: "Understanding Multivariable Functions",
+  youtubeId: "i_O9CJ8RGls",
+  description:
+    "An introduction to multivariable functions and how to interpret functions of two variables."
+}
 ];
