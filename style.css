@@ -447,3 +447,23 @@ footer p {
 .video-card p {
   color: var(--muted-text);
 }
+
+/* =========================================
+   RESPONSIVE VIDEO EMBEDS
+========================================= */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--uw-black);
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  border: 0;
+}
