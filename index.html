@@ -36,7 +36,19 @@
       </p>
     </div>
   </section>
+<section class="global-search-section">
 
+  <label for="global-search">Search all videos</label>
+
+  <input
+    type="search"
+    id="global-search"
+    placeholder="Search limits, chain rule, integration by parts..."
+  >
+
+  <div id="search-results"></div>
+
+</section>
   <main>
 
     <section class="intro">
@@ -101,6 +113,63 @@
   <footer>
     <p>© Burcu Karabina · Mathematics Video Library</p>
   </footer>
+<script src="videos.js"></script>
 
+<script>
+  const searchInput = document.getElementById("global-search");
+  const resultsContainer = document.getElementById("search-results");
+
+  searchInput.addEventListener("input", () => {
+
+    const term = searchInput.value.toLowerCase().trim();
+
+    resultsContainer.innerHTML = "";
+
+    if (term === "") {
+      return;
+    }
+
+    const matches = videos.filter(video =>
+      video.title.toLowerCase().includes(term) ||
+      video.topic.toLowerCase().includes(term) ||
+      video.section.toLowerCase().includes(term) ||
+      video.description.toLowerCase().includes(term)
+    );
+
+    if (matches.length === 0) {
+      resultsContainer.innerHTML =
+        '<p class="no-results">No matching videos found.</p>';
+      return;
+    }
+
+    matches.forEach(video => {
+
+      const result = document.createElement("a");
+
+      result.className = "search-result";
+
+      result.href =
+        video.course === "calculus-1"
+          ? "calculus-1.html"
+          : video.course === "calculus-2"
+          ? "calculus-2.html"
+          : "calculus-3.html";
+
+      result.innerHTML = `
+        <span class="search-course">
+          ${video.course.replace("calculus-", "Calculus ")}
+        </span>
+
+        <strong>${video.title}</strong>
+
+        <span>${video.section}</span>
+      `;
+
+      resultsContainer.appendChild(result);
+
+    });
+
+  });
+</script>
 </body>
 </html>
