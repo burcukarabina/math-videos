@@ -1,0 +1,41 @@
+const videos = [
+  {
+    course: "calculus-1",
+    section: "Limits and Continuity",
+    topic: "Limits",
+    title: "Understanding Limits",
+    youtubeId: "-_QaMtM-8bs",
+    description:
+      "An introduction to limits and how they describe the behaviour of a function near a point."
+  },
+
+  {
+    course: "calculus-1",
+    section: "Limits and Continuity",
+    topic: "Limits",
+    title: "One-Sided Limits",
+    youtubeId: "",
+    description:
+      "Understanding left-hand and right-hand limits using graphical and numerical examples."
+  },
+
+  {
+    course: "calculus-1",
+    section: "Derivatives",
+    topic: "Derivatives",
+    title: "The Derivative at a Point",
+    youtubeId: "",
+    description:
+      "Connecting the derivative to instantaneous rate of change and tangent lines."
+  },
+
+  {
+    course: "calculus-1",
+    section: "Derivatives",
+    topic: "Derivatives",
+    title: "The Chain Rule",
+    youtubeId: "",
+    description:
+      "Recognizing composite functions and applying the chain rule efficiently."
+  }
+];
