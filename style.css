@@ -329,3 +329,121 @@ footer p {
     padding: 1.5rem;
   }
 }
+
+/* =========================================
+   COURSE PAGE
+========================================= */
+
+.course-hero {
+  background: var(--uw-charcoal);
+  color: white;
+
+  padding: 3.5rem 1.5rem;
+}
+
+.course-hero-content {
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+}
+
+.course-hero h1 {
+  margin: 0;
+
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+}
+
+.course-hero p {
+  max-width: 700px;
+
+  margin-top: 0.75rem;
+
+  color: #eeeeee;
+}
+
+
+/* =========================================
+   VIDEO SECTIONS
+========================================= */
+
+.video-section {
+  margin-bottom: 4rem;
+}
+
+.video-section h2 {
+  margin-bottom: 1.5rem;
+
+  font-size: 1.8rem;
+}
+
+
+/* =========================================
+   VIDEO GRID
+========================================= */
+
+.video-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 1.5rem;
+}
+
+
+/* =========================================
+   VIDEO CARDS
+========================================= */
+
+.video-card {
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.video-placeholder {
+  aspect-ratio: 16 / 9;
+
+  background: var(--uw-charcoal);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  font-weight: 700;
+}
+
+.video-card-content {
+  padding: 1.5rem;
+}
+
+.video-topic {
+  margin: 0 0 0.3rem;
+
+  color: var(--uw-teal);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.video-card h3 {
+  margin: 0 0 0.5rem;
+
+  font-size: 1.25rem;
+}
+
+.video-card p {
+  color: var(--muted-text);
+}
