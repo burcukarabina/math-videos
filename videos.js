@@ -63,4 +63,17 @@ const videos = [
   description:
     "An introduction to multivariable functions and how to interpret functions of two variables."
 }
+
+{
+  course: "calculus-3",
+  courseName: "Calculus III",
+  page: "calculus-3.html",
+  id: "level-curves",
+  section: "Functions of Several Variables",
+  topic: "Level Curves",
+  title: "Level Curves",
+  youtubeId: "7gMzQ7-qAys",
+  description:
+    "An introduction to level curves and how they help visualize functions of two variables."
+}
 ];
