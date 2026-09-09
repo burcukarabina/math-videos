@@ -148,12 +148,7 @@
 
       result.className = "search-result";
 
-      result.href =
-        video.course === "calculus-1"
-          ? "calculus-1.html"
-          : video.course === "calculus-2"
-          ? "calculus-2.html"
-          : "calculus-3.html";
+      rresult.href = `${video.page}#${video.id}`;
 
       result.innerHTML = `
         <span class="search-course">
