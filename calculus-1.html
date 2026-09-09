@@ -45,109 +45,102 @@
     </div>
   </section>
 
-  <main>
+ <main>
 
-    <section class="video-section">
+  <div id="video-library"></div>
 
-      <h2>Limits and Continuity</h2>
-
-      <div class="video-grid">
-
-        <article class="video-card">
-       <div class="video-wrapper">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
-    title="Test video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
-
-          <div class="video-card-content">
-            <p class="video-topic">LIMITS</p>
-
-            <h3>Understanding Limits</h3>
-
-            <p>
-              An introduction to limits and how they describe
-              the behaviour of a function near a point.
-            </p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-placeholder">
-            Video coming soon
-          </div>
-
-          <div class="video-card-content">
-            <p class="video-topic">LIMITS</p>
-
-            <h3>One-Sided Limits</h3>
-
-            <p>
-              Understanding left-hand and right-hand limits
-              using graphical and numerical examples.
-            </p>
-          </div>
-        </article>
-
-      </div>
-
-    </section>
-
-    <section class="video-section">
-
-      <h2>Derivatives</h2>
-
-      <div class="video-grid">
-
-        <article class="video-card">
-          <div class="video-placeholder">
-            Video coming soon
-          </div>
-
-          <div class="video-card-content">
-            <p class="video-topic">DERIVATIVES</p>
-
-            <h3>The Derivative at a Point</h3>
-
-            <p>
-              Connecting the derivative to instantaneous
-              rate of change and tangent lines.
-            </p>
-          </div>
-        </article>
-
-        <article class="video-card">
-          <div class="video-placeholder">
-            Video coming soon
-          </div>
-
-          <div class="video-card-content">
-            <p class="video-topic">DERIVATIVES</p>
-
-            <h3>The Chain Rule</h3>
-
-            <p>
-              Recognizing composite functions and applying
-              the chain rule efficiently.
-            </p>
-          </div>
-        </article>
-
-      </div>
-
-    </section>
-
-  </main>
+</main>
 
   <footer>
     <p>
       © Burcu Karabina · Mathematics Video Library
     </p>
   </footer>
+<script src="videos.js"></script>
 
+<script>
+  const library = document.getElementById("video-library");
+
+  const calculusVideos = videos.filter(
+    video => video.course === "calculus-1"
+  );
+
+  const sections = [
+    ...new Set(calculusVideos.map(video => video.section))
+  ];
+
+  sections.forEach(sectionName => {
+
+    const section = document.createElement("section");
+    section.className = "video-section";
+
+    const heading = document.createElement("h2");
+    heading.textContent = sectionName;
+
+    section.appendChild(heading);
+
+    const grid = document.createElement("div");
+    grid.className = "video-grid";
+
+    const sectionVideos = calculusVideos.filter(
+      video => video.section === sectionName
+    );
+
+    sectionVideos.forEach(video => {
+
+      const card = document.createElement("article");
+      card.className = "video-card";
+
+      let videoDisplay;
+
+      if (video.youtubeId) {
+
+        videoDisplay = `
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/${video.youtubeId}"
+              title="${video.title}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        `;
+
+      } else {
+
+        videoDisplay = `
+          <div class="video-placeholder">
+            Video coming soon
+          </div>
+        `;
+      }
+
+      card.innerHTML = `
+        ${videoDisplay}
+
+        <div class="video-card-content">
+
+          <p class="video-topic">
+            ${video.topic.toUpperCase()}
+          </p>
+
+          <h3>${video.title}</h3>
+
+          <p>
+            ${video.description}
+          </p>
+
+        </div>
+      `;
+
+      grid.appendChild(card);
+    });
+
+    section.appendChild(grid);
+    library.appendChild(section);
+
+  });
+</script>
 </body>
 </html>
