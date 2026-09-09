@@ -120,7 +120,6 @@
   const resultsContainer = document.getElementById("search-results");
 
   searchInput.addEventListener("input", () => {
-
     const term = searchInput.value.toLowerCase().trim();
 
     resultsContainer.innerHTML = "";
@@ -133,7 +132,8 @@
       video.title.toLowerCase().includes(term) ||
       video.topic.toLowerCase().includes(term) ||
       video.section.toLowerCase().includes(term) ||
-      video.description.toLowerCase().includes(term)
+      video.description.toLowerCase().includes(term) ||
+      video.courseName.toLowerCase().includes(term)
     );
 
     if (matches.length === 0) {
@@ -143,16 +143,15 @@
     }
 
     matches.forEach(video => {
-
       const result = document.createElement("a");
 
       result.className = "search-result";
 
-      rresult.href = `${video.page}#${video.id}`;
+      result.href = `${video.page}#${video.id}`;
 
       result.innerHTML = `
         <span class="search-course">
-          ${video.course.replace("calculus-", "Calculus ")}
+          ${video.courseName}
         </span>
 
         <strong>${video.title}</strong>
@@ -161,9 +160,7 @@
       `;
 
       resultsContainer.appendChild(result);
-
     });
-
   });
 </script>
 </body>
