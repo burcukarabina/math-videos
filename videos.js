@@ -1,6 +1,9 @@
 const videos = [
   {
     course: "calculus-1",
+    courseName: "Calculus I",
+    page: "calculus-1.html",
+    id: "understanding-limits",
     section: "Limits and Continuity",
     topic: "Limits",
     title: "Understanding Limits",
@@ -11,6 +14,9 @@ const videos = [
 
   {
     course: "calculus-1",
+    courseName: "Calculus I",
+    page: "calculus-1.html",
+    id: "one-sided-limits",
     section: "Limits and Continuity",
     topic: "Limits",
     title: "One-Sided Limits",
@@ -21,6 +27,9 @@ const videos = [
 
   {
     course: "calculus-1",
+    courseName: "Calculus I",
+    page: "calculus-1.html",
+    id: "derivative-at-a-point",
     section: "Derivatives",
     topic: "Derivatives",
     title: "The Derivative at a Point",
@@ -31,6 +40,9 @@ const videos = [
 
   {
     course: "calculus-1",
+    courseName: "Calculus I",
+    page: "calculus-1.html",
+    id: "chain-rule",
     section: "Derivatives",
     topic: "Derivatives",
     title: "The Chain Rule",
