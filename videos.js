@@ -49,7 +49,7 @@ const videos = [
     youtubeId: "",
     description:
       "Recognizing composite functions and applying the chain rule efficiently."
-  }
+  },
 
   {
   course: "calculus-3",
@@ -62,7 +62,7 @@ const videos = [
   youtubeId: "i_O9CJ8RGls",
   description:
     "An introduction to multivariable functions and how to interpret functions of two variables."
-}
+},
 
 {
   course: "calculus-3",
