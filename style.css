@@ -467,3 +467,97 @@ footer p {
 
   border: 0;
 }
+
+/* =========================================
+   GLOBAL VIDEO SEARCH
+========================================= */
+
+.global-search-section {
+  max-width: 750px;
+  margin: 0 auto 4rem;
+}
+
+.global-search-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+#global-search {
+  width: 100%;
+
+  padding: 1rem;
+
+  border: 1px solid var(--border);
+  border-radius: 7px;
+
+  background: white;
+
+  font-size: 1rem;
+}
+
+#global-search:focus {
+  outline: 3px solid var(--uw-teal);
+  outline-offset: 2px;
+}
+
+
+/* Search results */
+
+#search-results {
+  margin-top: 0.75rem;
+}
+
+.search-result {
+  display: grid;
+  gap: 0.15rem;
+
+  padding: 1rem;
+
+  background: white;
+
+  border: 1px solid var(--border);
+  border-bottom: none;
+
+  color: var(--text);
+  text-decoration: none;
+}
+
+.search-result:first-child {
+  border-radius: 7px 7px 0 0;
+}
+
+.search-result:last-child {
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 0 7px 7px;
+}
+
+.search-result:only-child {
+  border-bottom: 1px solid var(--border);
+  border-radius: 7px;
+}
+
+.search-result:hover {
+  background: var(--uw-light-gold);
+}
+
+.search-course {
+  color: var(--uw-teal);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.search-result strong {
+  font-size: 1.05rem;
+}
+
+.search-result span:last-child {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
