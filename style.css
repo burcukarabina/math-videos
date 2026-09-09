@@ -1,0 +1,15 @@
+:root {
+  --uw-black: #000000;
+  --uw-charcoal: #2f2f2f;
+  --uw-gold: #ffd54f;
+  --uw-yellow: #fdd54f;
+  --uw-light-yellow: #fff7d6;
+
+  --uw-teal: #007c89;
+
+  --background: #f7f7f7;
+  --surface: #ffffff;
+  --text: #222222;
+  --muted-text: #666666;
+  --border: #dddddd;
+}
