@@ -7,7 +7,7 @@ const videos = [
     section: "Limits and Continuity",
     topic: "Limits",
     title: "Understanding Limits",
-    youtubeId: "-_QaMtM-8bs",
+    youtubeId: "",
     description:
       "An introduction to limits and how they describe the behaviour of a function near a point."
   },
