@@ -50,6 +50,57 @@ const videos = [
     description:
       "Recognizing composite functions and applying the chain rule efficiently."
   },
+  {
+  course: "calculus-2",
+  courseName: "Calculus II",
+  page: "calculus-2.html",
+  id: "integration-by-parts",
+  section: "Integration Techniques",
+  topic: "Integration",
+  title: "Integration by Parts",
+  youtubeId: "",
+  description:
+    "A review of integration by parts with worked examples."
+},
+
+{
+  course: "calculus-2",
+  courseName: "Calculus II",
+  page: "calculus-2.html",
+  id: "trigonometric-substitution",
+  section: "Integration Techniques",
+  topic: "Integration",
+  title: "Trigonometric Substitution",
+  youtubeId: "",
+  description:
+    "Using trigonometric substitutions to evaluate integrals."
+},
+
+{
+  course: "calculus-2",
+  courseName: "Calculus II",
+  page: "calculus-2.html",
+  id: "improper-integrals",
+  section: "Improper Integrals",
+  topic: "Integration",
+  title: "Improper Integrals",
+  youtubeId: "",
+  description:
+    "An introduction to improper integrals and determining convergence."
+},
+
+{
+  course: "calculus-2",
+  courseName: "Calculus II",
+  page: "calculus-2.html",
+  id: "separable-differential-equations",
+  section: "Differential Equations",
+  topic: "Differential Equations",
+  title: "Separable Differential Equations",
+  youtubeId: "",
+  description:
+    "Solving first-order differential equations using separation of variables."
+},
 
   {
   course: "calculus-3",
