@@ -561,3 +561,12 @@ footer p {
   color: var(--muted-text);
   font-size: 0.9rem;
 }
+
+.video-card {
+  scroll-margin-top: 100px;
+}
+
+.video-card:target {
+  outline: 4px solid var(--uw-gold);
+  outline-offset: 4px;
+}
