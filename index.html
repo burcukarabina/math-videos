@@ -5,67 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Math Videos | Burcu Karabina</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Math Videos</h1>
-  <p>Short explanations, worked examples, and review videos for undergraduate mathematics.</p>
-</header>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">Math Videos</a>
 
-<main>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="calculus-1.html">Calculus I</a>
+        <a href="calculus-2.html">Calculus II</a>
+        <a href="calculus-3.html">Calculus III</a>
+      </nav>
+    </div>
+  </header>
 
-  <section class="intro">
-    <h2>What are you working on?</h2>
-    <p>Select a course to explore videos by topic.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Mathematics Video Library</p>
+
+      <h1>Math Videos</h1>
+
+      <p class="hero-text">
+        Short explanations, worked examples, and review videos
+        for undergraduate mathematics.
+      </p>
+    </div>
   </section>
 
-  <section class="courses">
+  <main>
 
-    <div class="course-card">
-      <h2>Calculus I</h2>
+    <section class="intro">
+      <h2>What are you working on?</h2>
+
       <p>
-        Limits, continuity, derivatives, linear approximation,
-        optimization, and applications.
+        Select a course to explore videos by topic.
       </p>
+    </section>
 
-      <a href="calculus-1.html">
-        Explore Calculus I →
-      </a>
-    </div>
+    <section class="courses" aria-label="Available courses">
 
-    <div class="course-card">
-      <h2>Calculus II</h2>
-      <p>
-        Integration techniques, applications of integration,
-        differential equations, sequences, and series.
-      </p>
+      <article class="course-card">
+        <p class="course-label">CALCULUS I</p>
 
-      <a href="calculus-2.html">
-        Explore Calculus II →
-      </a>
-    </div>
+        <h2>Calculus I</h2>
 
-    <div class="course-card">
-      <h2>Calculus III</h2>
-      <p>
-        Multivariable functions, partial derivatives,
-        gradients, optimization, and multiple integrals.
-      </p>
+        <p>
+          Limits, continuity, derivatives, linear approximation,
+          optimization, and applications.
+        </p>
 
-      <a href="calculus-3.html">
-        Explore Calculus III →
-      </a>
-    </div>
+        <a class="course-link" href="calculus-1.html">
+          Explore Calculus I →
+        </a>
+      </article>
 
-  </section>
+      <article class="course-card">
+        <p class="course-label">CALCULUS II</p>
 
-</main>
+        <h2>Calculus II</h2>
 
-<footer>
-  © Burcu Karabina · Mathematics Video Library
-</footer>
+        <p>
+          Integration techniques, applications of integration,
+          differential equations, sequences, and series.
+        </p>
+
+        <a class="course-link" href="calculus-2.html">
+          Explore Calculus II →
+        </a>
+      </article>
+
+      <article class="course-card">
+        <p class="course-label">CALCULUS III</p>
+
+        <h2>Calculus III</h2>
+
+        <p>
+          Multivariable functions, partial derivatives,
+          gradients, optimization, and multiple integrals.
+        </p>
+
+        <a class="course-link" href="calculus-3.html">
+          Explore Calculus III →
+        </a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© Burcu Karabina · Mathematics Video Library</p>
+  </footer>
 
 </body>
 </html>
