@@ -75,6 +75,18 @@ const videos = [
     "A worked example showing how a definite integral can be calculated using a Riemann sum."
 },
   {
+  course: "calculus-2",
+  courseName: "Calculus II",
+  page: "calculus-2.html",
+  id: "integral-as-net-area",
+  section: "Definite Integrals",
+  topic: "Definite Integrals",
+  title: "Integral as a Net Area",
+  youtubeId: "0miwGorLPS8",
+  description:
+    "An explanation of how a definite integral represents net signed area, accounting for regions above and below the x-axis."
+},
+  {
   course: "calculus-3",
   courseName: "Calculus III",
   page: "calculus-3.html",
