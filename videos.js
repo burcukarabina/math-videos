@@ -86,6 +86,20 @@ const videos = [
   description:
     "An explanation of how a definite integral represents net signed area, accounting for regions above and below the x-axis."
 },
+
+  {
+  course: "calculus-2",
+  courseName: "Calculus II",
+  page: "calculus-2.html",
+  id: "estimating-integral-bounded-function",
+  section: "Definite Integrals",
+  topic: "Definite Integrals",
+  title: "Estimating an Integral for a Bounded Function",
+  youtubeId: "kZtL3QqhR1M",
+  description:
+    "An example illustrating how to estimate the value of a definite integral when the function is bounded."
+},
+  
   {
   course: "calculus-3",
   courseName: "Calculus III",
