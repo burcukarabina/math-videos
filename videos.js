@@ -99,6 +99,19 @@ const videos = [
   description:
     "An example illustrating how to estimate the value of a definite integral when the function is bounded."
 },
+
+  {
+  course: "calculus-2",
+  courseName: "Calculus II",
+  page: "calculus-2.html",
+  id: "average-value-of-a-function",
+  section: "Definite Integrals",
+  topic: "Definite Integrals",
+  title: "Average Value of a Function",
+  youtubeId: "m3Q9dr_yr3Y",
+  description:
+    "An introduction to the average value of a function on a closed interval and its connection to definite integrals."
+},
   
   {
   course: "calculus-3",
